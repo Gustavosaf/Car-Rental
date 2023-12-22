@@ -39,7 +39,6 @@ while True:
         returnCar(carCode)
         subOption = int(input("0 - CONTINUE | 1 - EXIT")) 
         if subOption == 0:
-            removeCar(carCode)
             continue
         else:
             break
