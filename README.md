@@ -7,3 +7,5 @@ Car rental system implemented in Python. It allows users to view the portfolio o
 - View the portfolio of available cars;
 - Rent a car for a specific number of days;
 - Return a rental car.
+
+This project was created for studying purposes. If you have some suggestions, please let me know!
