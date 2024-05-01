@@ -1,4 +1,4 @@
-carPortfolio = {
+car_portfolio = {
     "Chevrolet Tracker": 120,
     "Chevrolet Onix": 90,
     "Chevrolet Spin": 150,
@@ -9,36 +9,41 @@ carPortfolio = {
     "Fiat Pulse": 130
 }
 
-rentedCar = {}
+rented_car = {}
 
 def menu():
-    print("\nWhat do you want to do?")
-    print("0 - Show portfolio | 1 - Rent car | 2 - Return car")
+    print("What do you want to do?\n")
+    print("0 - Show portfolio | 1 - Rent car | 2 - Return car | 3 - Exit program")
 
 
-def showPortfolio(dic):
-    print("=================")
-    for index, (carName, value) in enumerate(dic.items()): 
-        print(f"{[index]} {carName} - {value} / day")
+def show_portfolio(dictionary, show_values):
+    print("=================\n")
+    for index, (car_name, car_value) in enumerate(dictionary.items()): 
+        if show_values:
+            print(f"{[index]} {car_name} - {car_value} / day")
+        else:
+            print(f"{[index]} {car_name}")
 
 
-def calculate(carCode, days):
-    price = list(carPortfolio.values())
-    currentPrice = price[carCode] * days
-    return f"This will cost R$ {currentPrice}"
+def calculate(car_code, days):
+    car_value = list(car_portfolio.values())
+    current_price = car_value[car_code] * days
+    return f"This will cost R$ {current_price}"
 
-def removeCar(index):
-    items = list(enumerate(carPortfolio.items()))
-    carKey = items[index][1][0]
-    carValue = items[index][1][1]
-    carPortfolio.pop(carKey)
-    rentedCar[carKey] = carValue
-    print(f"Congratulations on renting the {carKey}!")
 
-def returnCar(index):
-    items = list(enumerate(rentedCar.items()))
-    carKey = items[index][1][0]
-    carValue = items[index][1][1]
-    rentedCar.pop(carKey)
-    carPortfolio[carKey] = carValue
-    print(f"The {carKey} has been returned.")
+def remove_car(index):
+    items = list(enumerate(car_portfolio.items()))
+    car_key_selected = items[index][1][0]
+    car_value_selected = items[index][1][1]
+    car_portfolio.pop(car_key_selected)
+    rented_car[car_key_selected] = car_value_selected 
+    print(f"Congratulations on renting the {car_key_selected}!")
+
+
+def return_car(index, current_price): #current_price
+    items = list(enumerate(rented_car.items()))
+    car_key_selected = items[index][1][0]
+    car_value_selected = items[index][1][1]
+    rented_car.pop(car_key_selected)
+    car_portfolio[car_key_selected] = car_value_selected
+    print(f"The {car_key_selected} has been returned and it {current_price}.")
