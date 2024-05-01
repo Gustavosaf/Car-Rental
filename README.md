@@ -12,10 +12,10 @@ This project was created for studying purposes. If you have some suggestions, pl
 
 # (PT) Sistema de aluguel de carros
 
-##Descrição
+## Descrição
 Sistema de aluguel de carros implementado em Python. Ele permite aos usuários visualizar o portfólio de carros disponíveis, alugar um carro por um determinado número de dias e devolver o carro alugado. O sistema acompanha o portfólio de carros disponíveis e carros alugados.
 
-##Características
+## Características
 - Visualizar o portfólio de carros disponíveis com preço de aluguel;
 - Alugue um carro por um determinado número de dias;
 - Devolver o carro com o valor do aluguel correspondente ao longo dos dias.
