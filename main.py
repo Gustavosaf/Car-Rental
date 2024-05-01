@@ -24,7 +24,6 @@ while True:
                 exit()
             else:
                 print("Invalid option. Please enter 0 to continue or 1 to exit.")
-                input("Press any buttom to try again...")
     elif option == 1:
         os.system("cls")
         print("Rent a car:")
@@ -42,7 +41,6 @@ while True:
                 exit()
             else:
                 print("Invalid option. Please enter 0 to continue or 1 to exit.")
-                input("Press any buttom to try again...")
     elif option == 2:
         os.system("cls")
         print("Cars to return:")
@@ -57,7 +55,6 @@ while True:
                 exit()
             else:
                 print("Invalid option. Please enter 0 to continue or 1 to exit.")
-                input("Press any buttom to try again...")
     elif option == 3:
         print("Exiting the program. Thank you!")
         break
