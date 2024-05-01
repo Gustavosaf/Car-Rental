@@ -1,4 +1,4 @@
-# (EN) Car Rental System
+# Car Rental System (EN) 
 
 ## Description
 Car rental system implemented in Python. It allows users to view the portfolio of available cars, rent a car for a specified number of days, and return the rental car. The system keeps track of the portfolio of available cars and rented cars.
@@ -10,7 +10,7 @@ Car rental system implemented in Python. It allows users to view the portfolio o
 
 This project was created for studying purposes. If you have some suggestions, please let me know!
 
-# (PT) Sistema de aluguel de carros
+# Sistema de aluguel de carros (PT)
 
 ## Descrição
 Sistema de aluguel de carros implementado em Python. Ele permite aos usuários visualizar o portfólio de carros disponíveis, alugar um carro por um determinado número de dias e devolver o carro alugado. O sistema acompanha o portfólio de carros disponíveis e carros alugados.
